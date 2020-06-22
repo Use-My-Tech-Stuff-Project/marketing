@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+::selection {
+  background: #9cc4b2;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  padding: 20px 5%;
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.logo-container {
+  flex-grow: 2;
+  font-size: 32px;
+}
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  font-family: "Syncopate", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  align-content: center;
+  padding: 12px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#login {
+  background-color: #fff;
+  color: #103c3e;
+  border-radius: 12px;
+}
+
+.header-content-container {
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  top: 40%;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+}
+
+.cta {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  height: 50px;
+  background-color: rgba(16, 60, 62, 0.60);
+  padding: 15px 50px;
+}
+
+.vid-wrap {
+  top: 0;
+  height: 75vh;
+  width: 100vw;
+}
+
+video {
+  width: 100%;
+  height:80vh;
+  object-fit: fill;
+}
+
+.vid-cover {
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(16, 60, 62, 0.57);
+  border-bottom: 7px solid #9cc4b2;
+}
+
+.product-section {
+  text-align: center;
+  border-bottom: 7px solid #9cc4b2;
+}
+
+.product-section-text {
+  padding: 0 20%;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.product-section-text p {
+  font-weight: 300;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.product-section p {
+  font-size: 1.5rem;
+}
+
+.product-container {
+  margin-top: 12px;
+  width: 14%;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+.product-icon {
+  font-size: 10rem;
+  margin-bottom: 30px;
+}
