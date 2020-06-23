@@ -33,11 +33,15 @@ body {
   color: white;
 }
 
+section {
+	border-bottom: 7px solid #9cc4b2;
+	width: 100vw;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 5%;
 }
 
 #nav-container {
@@ -46,7 +50,7 @@ body {
   position: fixed;
   width: 100%;
   padding: 20px 5%;
-  z-index: 2;
+  z-index: 3;
   color: white;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -120,14 +124,15 @@ video {
   top: 0;
   background-color: rgba(16, 60, 62, 0.57);
   border-bottom: 7px solid #9cc4b2;
+	margin-bottom: 20px;
 }
 
-.product-section {
+.info-section {
+	margin-top: 50px;
   text-align: center;
-  border-bottom: 7px solid #9cc4b2;
 }
 
-.product-section-text {
+.info-section-text {
   padding: 0 20%;
   font-size: 24px;
 }
@@ -136,14 +141,15 @@ h3 {
   font-size: 2.4rem;
 }
 
-.product-section-text p {
+.info-section-text p {
   font-weight: 300;
 }
 
-.products {
+.gallery {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+	flex-wrap: wrap;
   margin: 40px 0;
 }
 
@@ -152,7 +158,7 @@ h4 {
   font-weight: 400;
 }
 
-.product-section p {
+.info-section p {
   font-size: 1.5rem;
 }
 
@@ -166,4 +172,134 @@ h4 {
 .product-icon {
   font-size: 10rem;
   margin-bottom: 30px;
+}
+
+.info-icon {
+	color: white;
+	background: #9cc4b2;
+	border-radius: 100%;
+	padding: 50px;
+}
+
+.title-section {
+	height: 35vh;
+	color: white;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 500px;
+}
+
+.title-section p {
+	position: relative;
+	font-size: 5rem;
+	font-family: "Syncopate", sans-serif;
+	font-weight: bold;
+	text-shadow: 4px 4px #1d1d1d;
+	text-transform: uppercase;
+	text-align: center;
+	top: 45%;
+}
+
+.tsone {
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(16, 60, 62, 0.57),
+		rgba(0, 0, 0, 0.57)),
+		url("../pics/tsone.jpg");
+		);
+
+}
+
+.tstwo {
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(16, 60, 62, 0.57),
+		rgba(0, 0, 0, 0.57)),
+		url("../pics/tstwo.jpg");
+		);
+		display: flex;
+		flex-direction: column;
+}
+
+.cta-footer {
+	display: inline-block;
+	text-align: center;
+}
+
+footer {
+	padding-top: 20px;
+	background: rgba(16, 60, 62, 0.57);
+}
+
+.footer-content {
+	height: 100%;
+	padding: 0 2%;
+}
+
+.footer-content-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.ftr-icon-container {
+	flex-grow: 3;
+}
+
+.ftr-icon {
+	color: #fff;
+	border-radius: 100%;
+	padding: 20px;
+}
+
+#ftr-nav a {
+	color: #9cc4b2;
+	font-weight: bold;
+	font-size: 1.05rem;
+}
+
+.contact-info {
+	text-align: right;
+	display: inline-block;
+	flex-grow: 1;
+}
+
+.contact-info p {
+	font-size: 1.4rem;
+	margin-top: 2%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	html {
+		width: 100vw;
+	}
+
+	#nav-container {
+		flex-direction: column;
+		width: 100vw;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	.gallery {
+		flex-direction: column;
+	}
+
+	.product-container {
+		width: 100%;
+	}
+
+	.title-section p {
+		font-size: 2rem;
+	}
+
+	.footer-content-container {
+		flex-direction: column;
+	}
 }
