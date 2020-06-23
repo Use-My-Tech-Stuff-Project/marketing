@@ -352,6 +352,49 @@ footer {
 	font-size: 2rem;
 }
 
+#products-title-section {
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(16, 60, 62, 0.57),
+		rgba(0, 0, 0, 0.57)),
+		url("../pics/products/cover.jpg");
+		);
+}
+
+#products-section {
+	margin: 90px 0;
+	border-bottom: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.product-type {
+	display: flex;
+	flex-direction: column;
+	width: 26%;
+	margin: 20px;
+	height: 50%;
+	text-align: center;
+	border: 1px solid #9cc4b2;
+	padding: 20px;
+}
+
+.product-title {
+	font-size: 2rem;
+}
+
+.product-type .image-container {
+	width: 100%;
+	height: 80%
+}
+
+.image-container img {
+	width: 100%;
+	padding: 20px;
+}
+
 @media screen and (max-width: 800px) {
 	html {
 		width: 100vw;
@@ -409,5 +452,21 @@ footer {
 
 	.about-person-text {
 		font-size: 2rem;
+	}
+
+	#products-section {
+		padding: 0;
+	}
+
+	.product-type {
+		width: 75%;
+	}
+
+	.product-type .product-title {
+		font-size: 1.6rem;
+	}
+
+	.product-type img {
+		width: 100%;
 	}
 }
