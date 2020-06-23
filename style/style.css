@@ -395,6 +395,65 @@ footer {
 	padding: 20px;
 }
 
+#contact-title-section {
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(16, 60, 62, 0.57),
+		rgba(0, 0, 0, 0.57)),
+		url("../pics/contact/cover.jpg");
+		);
+}
+
+#contact-section {
+	margin: 200px 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: 0;
+}
+
+#contact-section input {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	height: 5vh;
+	border: 1px solid #9cc4b2;
+}
+
+#contact-section input:focus {
+	outline: none;
+	border: 4px solid #9cc4b2;
+}
+
+#comment-form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 2rem;
+}
+
+#comment-form textarea {
+	border: 1px solid #9cc4b2;
+}
+
+#comment-form textarea:focus {
+	outline: none;
+	border: 4px solid #9cc4b2;
+}
+
+#submit {
+	border: 1px solid #9cc4b2;
+	background: #9cc4b2;
+	color: #fff;
+}
+
+#submit:hover {
+	background: #fff;
+	border: 1px solid #103c3e;
+	color: #103c3e;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
 	html {
 		width: 100vw;
@@ -442,6 +501,10 @@ footer {
 		flex-direction: column;
 	}
 
+	.ftr-icon-container {
+		text-align: center;
+	}
+
 	.about-person {
 		flex-direction: column;
 	}
@@ -468,5 +531,9 @@ footer {
 
 	.product-type img {
 		width: 100%;
+	}
+
+	#comment-form {
+		width: 80%;
 	}
 }
