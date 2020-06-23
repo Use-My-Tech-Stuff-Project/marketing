@@ -45,6 +45,7 @@ section {
 }
 
 #nav-container {
+	overflow: hidden;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -82,6 +83,10 @@ nav a:hover {
   background-color: #fff;
   color: #103c3e;
   border-radius: 12px;
+}
+
+.icon {
+	display: none;
 }
 
 .header-content-container {
@@ -189,7 +194,7 @@ h4 {
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	min-height: 500px;
+	max-height: 500px;
 }
 
 .title-section p {
@@ -208,7 +213,7 @@ h4 {
 		to right bottom,
 		rgba(16, 60, 62, 0.57),
 		rgba(0, 0, 0, 0.57)),
-		url("../pics/tsone.jpg");
+		url("../pics/tsone-small.jpg");
 		);
 
 }
@@ -218,15 +223,14 @@ h4 {
 		to right bottom,
 		rgba(16, 60, 62, 0.57),
 		rgba(0, 0, 0, 0.57)),
-		url("../pics/tstwo.jpg");
+		url("../pics/tstwo-small.jpg");
 		);
-		display: flex;
-		flex-direction: column;
 }
 
 .cta-footer {
-	display: inline-block;
+	display: block;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 footer {
@@ -279,12 +283,29 @@ footer {
 	}
 
 	#nav-container {
-		flex-direction: column;
+		display: block;
+		flex-direction: row;
 		width: 100vw;
+	}
+
+	.top-container {
+		display: flex;
+		flex-direction: row;
 	}
 
 	nav {
 		flex-direction: column;
+	}
+
+	#top-nav {
+		display: none;
+		flex-direction: column;
+	}
+
+	.icon {
+		display: block;
+		color: white;
+		font-size: 1.5rem;
 	}
 
 	.gallery {
