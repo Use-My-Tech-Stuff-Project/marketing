@@ -208,7 +208,7 @@ h4 {
 	max-height: 500px;
 }
 
-.title-section p {
+.title-section .title-text {
 	position: relative;
 	font-size: 2.5rem;
 	font-family: "Syncopate", sans-serif;
@@ -286,7 +286,71 @@ footer {
 	margin-top: 2%;
 }
 
+.about-cover {
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(16, 60, 62, 0.57),
+		rgba(0, 0, 0, 0.57)),
+		url("../pics/about/cover.jpg");
+		);
+}
 
+#about-section {
+	margin: 90px 0;
+	padding: 0 12%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 0px;
+}
+
+.about-person {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 2px dashed #000;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.about-person .pic-name {
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	text-align: center;
+	width: 30%;
+}
+
+.about-person .roll {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.about-person .pic-name img {
+	width: 70%;
+	align-self: center;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+
+.about-person-text {
+	flex-grow: 3;
+	font-size: 3rem;
+}
+
+.about-person-text p {
+	position: relative;
+	text-align: center;
+	top: 45%;
+}
+
+.right-left {
+	flex-direction: row-reverse;
+}
+
+.quote {
+	color: #9cc4b2;
+	font-size: 2rem;
+}
 
 @media screen and (max-width: 800px) {
 	html {
@@ -333,5 +397,17 @@ footer {
 
 	.footer-content-container {
 		flex-direction: column;
+	}
+
+	.about-person {
+		flex-direction: column;
+	}
+
+	.about-person .pic-name {
+		width: 100%;
+	}
+
+	.about-person-text {
+		font-size: 2rem;
 	}
 }
