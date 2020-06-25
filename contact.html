@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://use.fontawesome.com/3c266c2e0a.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/fa/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate&family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+  <title>💻UseMyTechStuff</title>
+</head>
+
+<body>
+  <div id="nav-container">
+    <div class="top-container">
+      <div class="logo-container">
+        <h1>UseMyTechStuff</h1>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="activateBurger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <nav id="top-nav">
+      <a href="./index.html">Home</a>
+      <a href="./products.html">Products</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./about.html">About</a>
+      <a href="https://usemy-techstuff.vercel.app/signup">Sign Up</a>
+      <a id="login" href="https://usemy-techstuff.vercel.app/login">Login</a>
+    </nav>
+
+  </div>
+
+  <section id="contact-title-section" class="title-section">
+    <h2 class="title-text">Contact</h2>
+  </section>
+
+  <section id="contact-section">
+    <h3>Let us know if you have any feedback or questions!</h3>
+    <form id="comment-form" action="index.html" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" value="" placeholder="John Dis">
+      <label for="name">Email:</label>
+      <input type="email" name="name" id="email" value="" placeholder="example@test.com">
+      <textarea name="comment" rows="8" cols="80" form="comment-form" placeholder="Enter your comment here..."></textarea>
+      <input id="submit" type="button" name="submit" value="submit" />
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <nav id="ftr-nav">
+        <a href="./index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+        <a href="https://usemy-techstuff.vercel.app/signup">Sign Up</a>
+        <a id="login" href="https://usemy-techstuff.vercel.app/login">Login</a>
+      </nav>
+      <div class="footer-content-container">
+        <div class="ftr-icon-container">
+          <a href="#"><i class="fa fa-facebook fa-3x ftr-icon" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-3x ftr-icon" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-3x ftr-icon" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="contact-info">
+          <p>&copy; UseMyTechStuff</p>
+          <p>Phone: 1+ (234)567-8910</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
